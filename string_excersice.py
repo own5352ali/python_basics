@@ -14,5 +14,8 @@ if len(username) > 12:
 elif not username.find(" ") == -1:
     print("The User-Name must not contain spaces")
 
+elif not username.isalpha():
+    print("The User-Name must not contain digits")
+
 else:
     print(f"Welcome! {username}")
